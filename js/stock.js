@@ -12,13 +12,13 @@ jQuery(document).ready(function($) {
                 $form.on('found_variation', function(event, variation) {
                     let stockHtml = '';
 
-                    if (typeof decoriaStockConfig !== 'undefined' && decoriaStockConfig.debug) {
+                    if (typeof iistockConfig !== 'undefined' && iistockConfig.debug) {
                         console.log('Variation found:', variation);
                     }
 
                     if (variation.is_on_backorder) {
                         stockHtml = '<div class="product-status backorder font-xs mb_10">' + 
-                            (variation.backorders === 'notify' ? decoriaStockText.backorder_notify : decoriaStockText.backorder) + 
+                            (variation.backorders === 'notify' ? iistockText.backorder_notify : iistockText.backorder) + 
                             '</div>';
                     } else if (variation.manage_stock === true) {
                         if (variation.is_in_stock) {
@@ -26,16 +26,16 @@ jQuery(document).ready(function($) {
                                 (variation.max_qty !== undefined && variation.max_qty > 0 ? 'danger' : 'safe') + 
                                 ' font-xs mb_10">' + 
                                 (variation.max_qty !== undefined && variation.max_qty > 0 
-                                    ? decoriaStockText.only.replace('%s', variation.max_qty) 
-                                    : decoriaStockText.in_stock) + 
+                                    ? iistockText.only.replace('%s', variation.max_qty) 
+                                    : iistockText.in_stock) + 
                                 '</div>';
                         } else {
-                            stockHtml = '<div class="product-status out-of-stock font-xs mb_10">' + decoriaStockText.out_stock + '</div>';
+                            stockHtml = '<div class="product-status out-of-stock font-xs mb_10">' + iistockText.out_stock + '</div>';
                         }
                     } else if (variation.parent_manages_stock === true) {
                         if (variation.parent_is_on_backorder) {
                             stockHtml = '<div class="product-status backorder font-xs mb_10">' + 
-                                (variation.parent_backorders === 'notify' ? decoriaStockText.backorder_notify : decoriaStockText.backorder) + 
+                                (variation.parent_backorders === 'notify' ? iistockText.backorder_notify : iistockText.backorder) + 
                                 '</div>';
                         } else {
                             const parentStockQty = parseInt(variation.parent_stock_qty, 10);
@@ -44,8 +44,8 @@ jQuery(document).ready(function($) {
                                 variation.parent_stock_status === 'instock' ? 'safe' : 'out-of-stock') + 
                                 ' font-xs mb_10">' + 
                                 (!isNaN(parentStockQty) && parentStockQty > 0 
-                                    ? decoriaStockText.only.replace('%s', parentStockQty) 
-                                    : variation.parent_stock_status === 'instock' ? decoriaStockText.in_stock : decoriaStockText.out_stock) + 
+                                    ? iistockText.only.replace('%s', parentStockQty) 
+                                    : variation.parent_stock_status === 'instock' ? iistockText.in_stock : iistockText.out_stock) + 
                                 '</div>';
                         }
                     } else {
@@ -65,10 +65,10 @@ jQuery(document).ready(function($) {
                             parentStockStatus === 'instock' ? 'safe' : 'out-of-stock') + 
                             ' font-xs mb_10">' + 
                             (parentIsOnBackorder 
-                                ? (parentBackorders === 'notify' ? decoriaStockText.backorder_notify : decoriaStockText.backorder) 
+                                ? (parentBackorders === 'notify' ? iistockText.backorder_notify : iistockText.backorder) 
                                 : parentManagesStock && !isNaN(parentStockQty) && parentStockQty > 0 
-                                ? decoriaStockText.only.replace('%s', parentStockQty) 
-                                : parentStockStatus === 'instock' ? decoriaStockText.in_stock : decoriaStockText.out_stock) + 
+                                ? iistockText.only.replace('%s', parentStockQty) 
+                                : parentStockStatus === 'instock' ? iistockText.in_stock : iistockText.out_stock) + 
                             '</div>';
                     }
 
@@ -96,10 +96,10 @@ jQuery(document).ready(function($) {
                         parentStockStatus === 'instock' ? 'safe' : 'out-of-stock') + 
                         ' font-xs mb_10">' + 
                         (parentIsOnBackorder 
-                            ? (parentBackorders === 'notify' ? decoriaStockText.backorder_notify : decoriaStockText.backorder) 
+                            ? (parentBackorders === 'notify' ? iistockText.backorder_notify : iistockText.backorder) 
                             : parentManagesStock && !isNaN(parentStockQty) && parentStockQty > 0 
-                            ? decoriaStockText.only.replace('%s', parentStockQty) 
-                            : parentStockStatus === 'instock' ? decoriaStockText.in_stock : decoriaStockText.out_stock) + 
+                            ? iistockText.only.replace('%s', parentStockQty) 
+                            : parentStockStatus === 'instock' ? iistockText.in_stock : iistockText.out_stock) + 
                         '</div>';
 
                     if ($statusElement.length > 0) {

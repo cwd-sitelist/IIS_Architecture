@@ -145,10 +145,10 @@
     }
 
     // Testimonial
-    function decoria_testimonial_swiper_carousel($scope) {
+    function iis_testimonial_swiper_carousel($scope) {
         if (typeof Swiper === 'undefined') return;
 
-        const container = $scope ? $scope.find('.decoriatestimonial2') : $('.decoriatestimonial2');
+        const container = $scope ? $scope.find('.iistestimonial2') : $('.iistestimonial2');
         if (!container.length) return;
 
         container.each(function () {
@@ -156,7 +156,7 @@
             let config = $el.data('swiper') || {};
 
             config.pagination = {
-                el: '.decoriatestimonial2-pagination',
+                el: '.iistestimonial2-pagination',
                 clickable: true,
                 renderBullet: function (index, className) {
                     const slide = $el.find('.swiper-slide').eq(index);
@@ -308,16 +308,16 @@
         updateYear();
         setInterval(updateYear, 1000 * 60 * 60 * 24);
 
-        $('.decoria-back-to-top').on('click', function(e) {
+        $('.iis-back-to-top').on('click', function(e) {
             e.preventDefault();
             $('html, body').animate({ scrollTop: 0 }, 800);
         });
 
         $(window).on('scroll', debounce(function() {
             if ($(this).scrollTop() > 100) {
-                $('.decoria-back-to-top').fadeIn();
+                $('.iis-back-to-top').fadeIn();
             } else {
-                $('.decoria-back-to-top').fadeOut();
+                $('.iis-back-to-top').fadeOut();
             }
         }, 200));
     }
@@ -325,38 +325,38 @@
     // Search Widget
     // -------------
     function initSearchWidget() {
-        $('.decoria-search-toggle-btn').on('click', function(e) {
+        $('.iis-search-toggle-btn').on('click', function(e) {
             e.preventDefault();
-            $('.decoria-search-widget.toggle-style').fadeIn(300);
+            $('.iis-search-widget.toggle-style').fadeIn(300);
             setTimeout(function() {
-                $('.decoria-search-widget.toggle-style .search').focus();
+                $('.iis-search-widget.toggle-style .search').focus();
             }, 300);
         });
 
-        $('.decoria-search-close-btn').on('click', function(e) {
+        $('.iis-search-close-btn').on('click', function(e) {
             e.preventDefault();
-            $('.decoria-search-widget.toggle-style').fadeOut(300);
-            $('.decoria-search-widget.toggle-style .search').val('');
-            $('.decoria_search-results').empty();
+            $('.iis-search-widget.toggle-style').fadeOut(300);
+            $('.iis-search-widget.toggle-style .search').val('');
+            $('.iis_search-results').empty();
         });
 
         $(document).on('click', function(e) {
-            if ($(e.target).is('.decoria-search-widget.toggle-style')) {
-                $('.decoria-search-widget.toggle-style').fadeOut(300);
-                $('.decoria-search-widget.toggle-style .search').val('');
-                $('.decoria_search-results').empty();
+            if ($(e.target).is('.iis-search-widget.toggle-style')) {
+                $('.iis-search-widget.toggle-style').fadeOut(300);
+                $('.iis-search-widget.toggle-style .search').val('');
+                $('.iis_search-results').empty();
             }
         });
 
         $(document).on('keyup', function(e) {
             if (e.key === 'Escape' || e.keyCode === 27) {
-                $('.decoria-search-widget.toggle-style').fadeOut(300);
-                $('.decoria-search-widget.toggle-style .search').val('');
-                $('.decoria_search-results').empty();
+                $('.iis-search-widget.toggle-style').fadeOut(300);
+                $('.iis-search-widget.toggle-style .search').val('');
+                $('.iis_search-results').empty();
             }
         });
 
-        $('.decoria-search-widget.toggle-style .box-header-search').on('click', function(e) {
+        $('.iis-search-widget.toggle-style .box-header-search').on('click', function(e) {
             e.stopPropagation();
         });
     }
@@ -393,7 +393,7 @@
             e.preventDefault();
 
             // No URL available — open in new tab as fallback
-            var url = typeof decoria_magnific_url !== 'undefined' ? decoria_magnific_url : '';
+            var url = typeof iis_magnific_url !== 'undefined' ? iis_magnific_url : '';
             if ( !url ) {
                 window.open( $trigger.attr('href'), '_blank' );
                 return;
@@ -426,7 +426,7 @@
         }
 
         // Otherwise attach a one-time delegated handler that loads on first click
-        $(document).on('click.decoriaVideoPopup', '.video_box.magnific-popup a', function(e) {
+        $(document).on('click.iisVideoPopup', '.video_box.magnific-popup a', function(e) {
             if ( _magnificLoaded ) return; // let magnificPopup handle it
             e.preventDefault();
             loadAndBind( $(this), e );
@@ -436,11 +436,11 @@
     // Accordion Images
     // ----------------
     function initAccordionImages() {
-        const accordionItems  = document.querySelectorAll('.decoria-accordion-item');
-        const accordionImages = document.querySelectorAll('.decoria-accordion-image');
+        const accordionItems  = document.querySelectorAll('.iis-accordion-item');
+        const accordionImages = document.querySelectorAll('.iis-accordion-image');
 
         accordionItems.forEach((item) => {
-            const header = item.querySelector('.decoria-accordion-header');
+            const header = item.querySelector('.iis-accordion-header');
             header.addEventListener('click', () => {
                 const imageIndex = item.getAttribute('data-image');
 
@@ -516,7 +516,7 @@
         observer.observe(document.body, { childList: true, subtree: true });
     }
 
-    window.decoriaTabWidget = {
+    window.iisTabWidget = {
         init: () => initTabWidgets($(document)),
         activateTab: (containerId, tabId) => {
             const $container = $('#' + containerId);
@@ -705,10 +705,10 @@
     }
 
     // Project Tab Carousel
-    function decoria_tab_carousel() {
-        if (!elementExists('.decoria_project_tab_design')) return;
+    function iis_tab_carousel() {
+        if (!elementExists('.iis_project_tab_design')) return;
 
-        $('.decoria_project_tab_design').each(function () {
+        $('.iis_project_tab_design').each(function () {
             var $tabContainer = $(this);
             var widgetId      = $tabContainer.data('widget-id') ||
                                 $tabContainer.attr('id') ||
@@ -756,7 +756,7 @@
     }
 
     // Progress Bar
-    function decoria_progress_bar() {
+    function iis_progress_bar() {
         if (typeof IntersectionObserver === 'undefined') {
             logger.warn('Intersection Observer not supported');
             return;
@@ -817,11 +817,11 @@
         });
     });
 
-    // decoria Tabs
-    function decoria_tab() {
-        if (!elementExists('.decoria_tab_box')) return;
+    // iis Tabs
+    function iis_tab() {
+        if (!elementExists('.iis_tab_box')) return;
 
-        $('.decoria_tab_box').each(function() {
+        $('.iis_tab_box').each(function() {
             var $tabContainer = $(this);
             var widgetId      = $tabContainer.data('widget-id');
             var hoverEnabled  = $tabContainer.hasClass('onhover');
@@ -995,7 +995,7 @@
     });
 
     // FAQs Accordion
-    function decoria_faqsall() {
+    function iis_faqsall() {
         if (!elementExists('.accordion_box')) return;
 
         $(".accordion_box").off('click').on('click', '.question', function() {
@@ -1173,33 +1173,33 @@
     });
 
     $(window).on('elementor/frontend/init', function() {
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-tab-v2.default', decoria_tab);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-tab-v2.default', iis_tab);
         elementorFrontend.hooks.addAction('frontend/element_ready/service-hover-content-repeater.default', initServiceHover);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-service-carousel-v1.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-client-carousel-widget.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-testimonial-v1.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-testimonial-v2.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-faqs-v1.default', decoria_faqsall);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-blog-carousel-v1.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-project-carousel.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-testimonial-v3.default', decoria_testimonial_swiper_carousel);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-service-carousel-v1.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-client-carousel-widget.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-testimonial-v1.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-testimonial-v2.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-faqs-v1.default', iis_faqsall);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-blog-carousel-v1.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-project-carousel.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-testimonial-v3.default', iis_testimonial_swiper_carousel);
         elementorFrontend.hooks.addAction('frontend/element_ready/countdown_widget.default', initDealsCountdown);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-tean-grid-carousel.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-project-tab-carousel-v1.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-image-carousel-widget.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-related-posts-carousel.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/steelthemes-service-hover-v1.default', initSwipers);
-        elementorFrontend.hooks.addAction('frontend/element_ready/decoria-product-carousel-v1.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-tean-grid-carousel.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-project-tab-carousel-v1.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-image-carousel-widget.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-related-posts-carousel.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-service-hover-v1.default', initSwipers);
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-product-carousel-v1.default', initSwipers);
     });
 
     jQuery(window).on('load', function() {
         (function($) {
             initProgressIndicator();
-            decoria_tab_carousel();
-            decoria_progress_bar();
-            decoria_tab();
-            decoria_testimonial_swiper_carousel();
-            decoria_faqsall();
+            iis_tab_carousel();
+            iis_progress_bar();
+            iis_tab();
+            iis_testimonial_swiper_carousel();
+            iis_faqsall();
             initProjectHoverCards();
             initDealsCountdown();
             initDropdownPosition();
@@ -1209,10 +1209,10 @@
     // Header Dropdown
     function initHeaderDropdown() {
         if (elementExists('.navbar_nav li.dropdown ul')) {
-            $('.navbar_nav li.dropdown > a').append('<div class="dropdown-btn trans"><span class="decorias-chevron-down"></span></div>');
+            $('.navbar_nav li.dropdown > a').append('<div class="dropdown-btn trans"><span class="iis-chevron-down"></span></div>');
         }
         if (elementExists('.navbar_nav li.mega_menu ul')) {
-            $('.navbar_nav li.mega_menu > a').append('<div class="dropdown-btn trans"><span class="decorias-chevron-down"></span></div>');
+            $('.navbar_nav li.mega_menu > a').append('<div class="dropdown-btn trans"><span class="iis-chevron-down"></span></div>');
         }
         if (elementExists('.navbar_nav > li:not(.mega_menu)')) {
             $('.navbar_nav > li:not(.mega_menu)').on('mouseenter mouseleave', function() {
@@ -1248,7 +1248,7 @@
 
         $offCanvasNavSubMenu.parent().each(function() {
             if (!$(this).find('> .dropdown-btn').length) {
-                $(this).prepend('<span class="dropdown-btn"><i class="decorias-chevron-down"></i></span>');
+                $(this).prepend('<span class="dropdown-btn"><i class="iis-chevron-down"></i></span>');
             }
         });
 
@@ -1318,7 +1318,7 @@
 
     // Mega Menu Adjustment
     // Mega Menu Adjustment
-function decoria_adjustMegaMenu() {
+function iis_adjustMegaMenu() {
     if (window.innerWidth < 1200) {
         document.querySelectorAll('.navbar_nav .sub-menu').forEach(subMenu => {
             subMenu.style.left     = '';
@@ -1375,7 +1375,7 @@ function initMegaMenu() {
             const resizeHandler = debounce(() => {
                 this.handleResize();
                 this.positionMegaMenus();
-                decoria_adjustMegaMenu();
+                iis_adjustMegaMenu();
             }, 250);
             window.addEventListener('resize', resizeHandler);
 
@@ -1572,7 +1572,7 @@ function initMegaMenu() {
 
         refresh() {
             this.positionMegaMenus();
-            decoria_adjustMegaMenu();
+            iis_adjustMegaMenu();
         }
 
         destroy() {}
@@ -1580,27 +1580,27 @@ function initMegaMenu() {
 
     const megaMenu = new MegaMenu();
     window.megaMenu = megaMenu;
-    decoria_adjustMegaMenu();
+    iis_adjustMegaMenu();
 }
 
     document.addEventListener('DOMContentLoaded', () => {
         initMegaMenu();
-        decoria_adjustMegaMenu();
+        iis_adjustMegaMenu();
     });
 
     window.addEventListener('load', () => {
-        decoria_adjustMegaMenu();
+        iis_adjustMegaMenu();
         if (window.megaMenu) window.megaMenu.refresh();
     });
     // Watch for cart price update and reposition mega menu
 function initCartUpdateObserver() {
-    const cartContainer = document.querySelector('.decoria_mini_cart_open .total-price-container');
+    const cartContainer = document.querySelector('.iis_mini_cart_open .total-price-container');
     if (!cartContainer) return;
 
     const observer = new MutationObserver(function() {
         // Small delay to let layout settle after price update
         setTimeout(function() {
-            decoria_adjustMegaMenu();
+            iis_adjustMegaMenu();
             if (window.megaMenu) window.megaMenu.refresh();
         }, 100);
     });
@@ -1623,7 +1623,7 @@ function initCartUpdateObserver() {
 }
  jQuery(document.body).on('wc_fragments_refreshed wc_fragments_loaded added_to_cart removed_from_cart', function() {
         setTimeout(function() {
-            decoria_adjustMegaMenu();
+            iis_adjustMegaMenu();
             if (window.megaMenu) window.megaMenu.refresh();
             initCartUpdateObserver();
         }, 150);
@@ -1870,12 +1870,12 @@ function initCartUpdateObserver() {
     });
 
     $(window).on('resize', debounce(function() {
-        decoria_adjustMegaMenu();
+        iis_adjustMegaMenu();
         initMenuActiveClass();
     }, 100));
 
     $(window).on('elementor/frontend/init', function() {
-        elementorFrontend.hooks.addAction('frontend/element_ready/steelthemes-service-hover-v1.default', function($scope) {
+        elementorFrontend.hooks.addAction('frontend/element_ready/iis-service-hover-v1.default', function($scope) {
             ServiceHoverAnimation.init();
         });
     });

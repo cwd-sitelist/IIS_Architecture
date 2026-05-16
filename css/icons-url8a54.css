@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'decorias';
-  src:  url('fonts/decorias55e6.html?oc95qt');
-  src:  url('fonts/decorias55e6.html?oc95qt#iefix') format('embedded-opentype'),
-    url('fonts/decorias55e6.ttf?oc95qt') format('truetype'),
-    url('fonts/decorias55e6.woff?oc95qt') format('woff'),
-    url('fonts/decorias55e6-2.html?oc95qt#decorias') format('svg');
+  font-family: 'iis';
+  src:  url('fonts/iis.html?oc95qt');
+  src:  url('fonts/iis.html?oc95qt#iefix') format('embedded-opentype'),
+    url('fonts/iis.ttf?oc95qt') format('truetype'),
+    url('fonts/iis.woff?oc95qt') format('woff'),
+    url('fonts/iis-2.html?oc95qt#iis') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="decorias-"], [class*=" decorias-"] {
+[class^="iis-"], [class*=" iis-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'decorias' !important;
+  font-family: 'iis' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;

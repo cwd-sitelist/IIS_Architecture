@@ -218,7 +218,7 @@ $('.simple-add-to-cart-button, .archive-quantity-controls, .custom-quantity-cont
   if ($element.hasClass('archive-quantity-controls')) {
         var $replacement = $(
            '<button class="simple-add-to-cart-button theme-button-new nbutton-style-1" data-product_id="' + productId + '">' +
-                '<i class="button-icon icon-before decorias-shopping-bag"></i> <span>' + (ajax_object.i18n.add_to_cart || 'Add to cart') + '</span>' +
+                '<i class="button-icon icon-before iis-shopping-bag"></i> <span>' + (ajax_object.i18n.add_to_cart || 'Add to cart') + '</span>' +
             '</button>'
         );
         $element.replaceWith($replacement);
@@ -558,7 +558,7 @@ $('.simple-add-to-cart-button, .archive-quantity-controls, .custom-quantity-cont
         }
         
         var originalHTML = $button.html();
-        $button.html('<i class="decorias-shopping-bag mr-5"></i> <span>' + (ajax_object.i18n.loading || 'Loading...') + '</span>').prop('disabled', true);
+        $button.html('<i class="iis-shopping-bag mr-5"></i> <span>' + (ajax_object.i18n.loading || 'Loading...') + '</span>').prop('disabled', true);
         
         $.ajax({
             url: ajax_object.ajax_url,
@@ -632,7 +632,7 @@ $('.simple-add-to-cart-button, .archive-quantity-controls, .custom-quantity-cont
             $span.text(ajax_object.i18n.loading || 'Loading...');
         } else {
             // Fallback: if no span found, replace all content but preserve structure
-            $button.html('<i class="decorias-shopping-bag mr-5"></i> <span>' + (ajax_object.i18n.loading || 'Loading...') + '</span>');
+            $button.html('<i class="iis-shopping-bag mr-5"></i> <span>' + (ajax_object.i18n.loading || 'Loading...') + '</span>');
         }
         
         $.ajax({
@@ -1119,7 +1119,7 @@ $(document).on('show_variation', '.variations_form', function(event, variation) 
     });
     
     // Mini cart handlers
-    $(document).on('click', '.decoria_mini_cart_open', function(e) {
+    $(document).on('click', '.iis_mini_cart_open', function(e) {
         e.preventDefault();
         e.stopPropagation();
         

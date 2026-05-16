@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    $('.decorialike-button').on('click', function(e) {
+    $('.iislike-button').on('click', function(e) {
         e.preventDefault();
         
         var button = $(this);
@@ -16,16 +16,16 @@ jQuery(document).ready(function($) {
         var postID = button.data('post-id');
         
         $.ajax({
-            url: decoriaAjax.ajax_url,
+            url: iisAjax.ajax_url,
             type: 'POST',
             data: {
-                action: 'decoria_post_like_toggle',
+                action: 'iis_post_like_toggle',
                 post_id: postID,
-                nonce: decoriaAjax.nonce
+                nonce: iisAjax.nonce
             },
             success: function(response) {
                 if (response.success) {
-                    button.find('.decorialike-count').text(response.data.text);
+                    button.find('.iislike-count').text(response.data.text);
                     button.toggleClass('liked', response.data.liked);
                 } else {
                     if (response.data.code === 'login_required') {

@@ -1,12 +1,12 @@
 /**
- * decoria Theme - Preloader JavaScript
+ * iis Theme - Preloader JavaScript
  * File: assets/js/preloader.js
  *
  * Works for both:
  *   - Spinner preloader (simple dismiss on window.load)
  *   - Custom Type (image slideshow with progress bar + dots)
  *
- * Config is passed from PHP via wp_localize_script as `decoriaPreloader`:
+ * Config is passed from PHP via wp_localize_script as `iisPreloader`:
  *   { style, maxTime, slideDur }
  */
 
@@ -14,8 +14,8 @@
     'use strict';
 
     /* ── Guard ── */
-    var cfg = window.decoriaPreloader || { style: 'spinner', maxTime: 12000, slideDur: 2400 };
-    var el  = document.getElementById('decoria-preloader');
+    var cfg = window.iisPreloader || { style: 'spinner', maxTime: 12000, slideDur: 2400 };
+    var el  = document.getElementById('iis-preloader');
     if (!el) return;
 
     /* ============================================================
@@ -67,8 +67,8 @@
     /* ============================================================
        CUSTOM TYPE: image slideshow + dots + progress bar
        ============================================================ */
-    var slides      = el.querySelectorAll('.decoria-preloader__slide');
-    var dots        = el.querySelectorAll('.decoria-preloader__dot');
+    var slides      = el.querySelectorAll('.iis-preloader__slide');
+    var dots        = el.querySelectorAll('.iis-preloader__dot');
     var progressFill = document.getElementById('dp-progress-fill');
     var progressNum  = document.getElementById('dp-progress-num');
 
@@ -114,7 +114,7 @@
     function activateDot(idx) {
         if (!dots[idx]) return;
         var dot  = dots[idx];
-        var fill = dot.querySelector('.decoria-preloader__dot-fill');
+        var fill = dot.querySelector('.iis-preloader__dot-fill');
 
         /* Force reflow to restart animation */
         if (fill) {
@@ -130,7 +130,7 @@
     function resetDot(idx) {
         if (!dots[idx]) return;
         var dot  = dots[idx];
-        var fill = dot.querySelector('.decoria-preloader__dot-fill');
+        var fill = dot.querySelector('.iis-preloader__dot-fill');
 
         dot.classList.remove('is-active');
 

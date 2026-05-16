@@ -1,1 +1,35 @@
-.fct-admin-notice{margin:12px 0;padding:10px 14px;border-left:4px solid #2271b1;background:#f0f6fc;font-size:13px}.fct-store-logo-img{max-width:var(--max-width, 150px);max-height:var(--max-height, 70px)}
+
+.quote-form{
+display:flex;
+gap:20px;
+backdrop-filter:blur(10px);
+}
+
+.quote-form input,
+.quote-form select{
+height:60px;
+border:none;
+border-radius:20px;
+padding:0 20px;
+font-size:18px;
+background:white;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.cost-form {
+    position: absolute;
+    bottom: calc(100vh - 300px);
+    z-index: 99;
+    left: 60px;
+}
+.iisr-list-item a {
+    color: #f1f1f1;
+}
+.iisr-list-item a:hover,  .header_contact .text-16:hover {
+    color: var(--e-global-color-colorsetone3) !important;
+}
+h2.common_title.tru{
+color: var(--e-global-color-colorsetone3) !important;
+}
+a.active span{
+color: var(--e-global-color-colorsetone3) !important;
+}

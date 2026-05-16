@@ -76,11 +76,11 @@ jQuery(document).ready(function ($) {
             $btn.addClass('loading').find('span').text('Loading...');
 
             // Use the localized object — falls back to WP default only as last resort
-            var ajaxUrl   = (window.decoriaProjectAjax && decoriaProjectAjax.ajaxurl)
-                            ? decoriaProjectAjax.ajaxurl
+            var ajaxUrl   = (window.iisProjectAjax && iisProjectAjax.ajaxurl)
+                            ? iisProjectAjax.ajaxurl
                             : '/wp-admin/admin-ajax.php';
-            var nonceVal  = (window.decoriaProjectAjax && decoriaProjectAjax.nonce)
-                            ? decoriaProjectAjax.nonce
+            var nonceVal  = (window.iisProjectAjax && iisProjectAjax.nonce)
+                            ? iisProjectAjax.nonce
                             : '';
 
             var cats = [];

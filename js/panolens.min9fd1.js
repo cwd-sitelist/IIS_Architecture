@@ -204,7 +204,7 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
  (function ($) {
     "use strict";
 
-    function decoriaTabsInit($scope) {
+    function iisTabsInit($scope) {
 
         let viewer      = null;
         let panorama    = null;
@@ -270,7 +270,7 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
          * CLEAN UP previous viewer
          * ------------------------------ */
         function destroyViewer(container) {
-            $(window).off('resize.decoria');
+            $(window).off('resize.iis');
 
             if (viewer) {
                 if (panorama) viewer.remove(panorama);
@@ -294,11 +294,11 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
          * TAB CLICK
          * ------------------------------ */
         $root.find('.showcase_tabs_btns .s_tab_btn')
-            .off('click.decoria')
-            .on('click.decoria', function () {
+            .off('click.iis')
+            .on('click.iis', function () {
 
                 const index   = $(this).data('index');
-                const section = $(this).closest('.decoria_tab_design');
+                const section = $(this).closest('.iis_tab_design');
                 const tabs    = section.find('.s_tab');
                 const btns    = section.find('.s_tab_btn');
                 const container = section.find('.tab-panorama-container');
@@ -356,7 +356,7 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
                     });
 
                     // ✅ Keep sharp on resize
-                    $(window).on('resize.decoria', function () {
+                    $(window).on('resize.iis', function () {
                         fixRendererQuality(container);
                     });
                 }
@@ -402,7 +402,7 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
                     });
 
                     // ✅ Keep sharp on resize
-                    $(window).on('resize.decoria', function () {
+                    $(window).on('resize.iis', function () {
                         fixRendererQuality(container);
                     });
                 }
@@ -457,10 +457,10 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
          * CLOSE / OPEN PANEL
          * ------------------------------ */
         $root.find('.close_content')
-            .off('click.decoria')
-            .on('click.decoria', function () {
+            .off('click.iis')
+            .on('click.iis', function () {
 
-                const section   = $(this).closest('.decoria_tab_design');
+                const section   = $(this).closest('.iis_tab_design');
                 const isClosing = !$(this).hasClass('active');
 
                 $(this).toggleClass('active');
@@ -500,15 +500,15 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
 
     /* Gutenberg */
     $(window).on('load', function () {
-        decoriaTabsInit();
+        iisTabsInit();
     });
 
     /* Elementor */
     $(window).on('elementor/frontend/init', function () {
         elementorFrontend.hooks.addAction(
-            'frontend/element_ready/decoria-tab-v1.default',
+            'frontend/element_ready/iis-tab-v1.default',
             function ($scope) {
-                decoriaTabsInit($scope);
+                iisTabsInit($scope);
             }
         );
     });

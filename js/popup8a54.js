@@ -1,19 +1,19 @@
 /**
- * decoria Popup System JavaScript
+ * iis Popup System JavaScript
  */
 (function($) {
     'use strict';
     
-    var decoriaPopup = {
-        settings: window.decoriaPopupSettings || {},
+    var iisPopup = {
+        settings: window.iisPopupSettings || {},
         overlay: null,
         content: null,
         isShown: false,
         isTriggered: false,
         
         init: function() {
-            this.overlay = $('#decoria-popup-overlay');
-            this.content = this.overlay.find('.decoria-popup-content');
+            this.overlay = $('#iis-popup-overlay');
+            this.content = this.overlay.find('.iis-popup-content');
             
             if (this.overlay.length === 0) {
                 return;
@@ -27,7 +27,7 @@
             var self = this;
             
             // Close button click
-            this.overlay.on('click', '.decoria-popup-close', function(e) {
+            this.overlay.on('click', '.iis-popup-close', function(e) {
                 e.preventDefault();
                 self.close();
             });
@@ -127,7 +127,7 @@
             this.isShown = true;
             
             // Add animation class
-            var animationClass = 'decoria-popup-' + this.settings.animation.replace('_', '-');
+            var animationClass = 'iis-popup-' + this.settings.animation.replace('_', '-');
             this.content.addClass(animationClass);
             
             // Show overlay with fade effect
@@ -147,7 +147,7 @@
             }
             
             // Add body class to prevent scrolling
-            $('body').addClass('decoria-popup-open');
+            $('body').addClass('iis-popup-open');
         },
         
         close: function() {
@@ -157,12 +157,12 @@
             this.isShown = false;
             
             // Remove animation class
-            var animationClass = 'decoria-popup-' + this.settings.animation.replace('_', '-');
+            var animationClass = 'iis-popup-' + this.settings.animation.replace('_', '-');
             this.content.removeClass(animationClass);
             
             this.overlay.fadeOut(300, function() {
                 // Remove body class
-                $('body').removeClass('decoria-popup-open');
+                $('body').removeClass('iis-popup-open');
                 
                 // Return focus to trigger element or document
                 self.returnFocus();
@@ -173,7 +173,7 @@
                 url: this.settings.ajaxUrl,
                 type: 'POST',
                 data: {
-                    action: 'decoria_popup_close',
+                    action: 'iis_popup_close',
                     nonce: this.settings.nonce
                 },
                 timeout: 5000,
@@ -238,19 +238,19 @@
     
     // Initialize on document ready
     $(document).ready(function() {
-        decoriaPopup.init();
+        iisPopup.init();
     });
     
     // Make available globally for manual triggering
-    window.decoriaPopup = {
+    window.iisPopup = {
         show: function() {
-            decoriaPopup.manualShow();
+            iisPopup.manualShow();
         },
         close: function() {
-            decoriaPopup.manualClose();
+            iisPopup.manualClose();
         },
         isVisible: function() {
-            return decoriaPopup.isVisible();
+            return iisPopup.isVisible();
         }
     };
     

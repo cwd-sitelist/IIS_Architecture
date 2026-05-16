@@ -28,7 +28,7 @@
         form.each(function() {
             var currentForm = $(this);
             var search = currentForm.find('.search');
-            var resultsContainer = currentForm.next('.decoria_search-results');
+            var resultsContainer = currentForm.next('.iis_search-results');
             var currentQuery = '';
 
             // Input event with debounce
@@ -149,7 +149,7 @@
         $(document).on('click', function(e) {
             if (!$(e.target).closest('.search_sidebar, .box-header-search').length) {
                 $('.search_sidebar').removeClass('active');
-                $('.decoria_search-results').removeClass('active');
+                $('.iis_search-results').removeClass('active');
             }
         });
 
