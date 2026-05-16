@@ -204,7 +204,7 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
  (function ($) {
     "use strict";
 
-    function DecoriaTabsInit($scope) {
+    function decoriaTabsInit($scope) {
 
         let viewer      = null;
         let panorama    = null;
@@ -500,7 +500,7 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
 
     /* Gutenberg */
     $(window).on('load', function () {
-        DecoriaTabsInit();
+        decoriaTabsInit();
     });
 
     /* Elementor */
@@ -508,7 +508,7 @@ y;h.Infospot=z;h.LittlePlanet=C;h.MODES=t;h.Media=S;h.Panorama=n;h.REVISION="12"
         elementorFrontend.hooks.addAction(
             'frontend/element_ready/decoria-tab-v1.default',
             function ($scope) {
-                DecoriaTabsInit($scope);
+                decoriaTabsInit($scope);
             }
         );
     });

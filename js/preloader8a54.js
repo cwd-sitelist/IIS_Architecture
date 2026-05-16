@@ -1,5 +1,5 @@
 /**
- * Decoria Theme - Preloader JavaScript
+ * decoria Theme - Preloader JavaScript
  * File: assets/js/preloader.js
  *
  * Works for both:

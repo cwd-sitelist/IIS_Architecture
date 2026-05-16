@@ -817,7 +817,7 @@
         });
     });
 
-    // Decoria Tabs
+    // decoria Tabs
     function decoria_tab() {
         if (!elementExists('.decoria_tab_box')) return;
 
