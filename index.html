@@ -3325,7 +3325,7 @@
                     }
 
                     .elementor-543 .elementor-element.elementor-element-415aede .logo_box img {
-                        width: 140px;
+                        width: 110px;
                         margin: 0 auto 0 0;
                     }
 
@@ -4538,7 +4538,7 @@
                     }
 
                     .elementor-543 .elementor-element.elementor-element-415aede .logo_box img {
-                        width: 140px;
+                        width: 110px;
                         margin: 0 auto 0 0;
                     }
 
@@ -6156,11 +6156,10 @@
                                                 }
                                             }
                                         </style>
-                                        <ul id="menu-menu-elementor" class="navbar_nav desktop_navbar_nav" itemscope
-                                            itemtype="http://www.schema.org/SiteNavigationElement">
+                                        <ul id="menu-menu-elementor" class="navbar_nav desktop_navbar_nav" >
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1238 nav-item">
-                                                <a itemprop="url" href="#" class="nav_link active"><span
+                                                <a  href="#" class="active nav_link"><span
                                                         class="text-link"><span class="box_menu"> Home
                                                         </span></span></a>
                                             </li>
@@ -7358,7 +7357,7 @@
                                                                                                 class="carousel-box-widget">
                                                                                                 <div
                                                                                                     class="image img_obj_fit_center">
-                                                                                                    <img src="../wp-content/uploads/2026/02/home-1.jpg"
+                                                                                                    <img src=""
                                                                                                         class="img trans"
                                                                                                         alt="image" />
                                                                                                 </div>
@@ -10340,22 +10339,76 @@
 
                                                 <section class="sldier_custom navigation-type_two">
 <div class="cost-form">
-     <form class="quote-form">
- 
-          <select>
-              <option>Select Service</option>
-              <option>Interior Design</option>
-              <option>Architecture</option>
-              <option>Construction</option>
-          </select>
- 
-          <input type="text" placeholder="Rate">
- 
-          <input type="text" placeholder="Estimated Cost">
- 
+   <form class="quote-form">
+
+    <select id="serviceSelect">
+        <option value="">Select the Service</option>
+
+        <option value="3.50|350.00">
+            Measured Building Surveys
+        </option>
+
+        <option value="0.50|50.00">
+            Location & Site Plans
+        </option>
+
+        <option value="3.50|350.00">
+            Existing & Proposed Planning Designs
+        </option>
+
+        <option value="0.50|50.00">
+            Planning Submissions
+        </option>
+
+        <option value="3.50|350.00">
+            Proposed Construction / Working Drawings
+        </option>
+
+        <option value="0.50|50.00">
+            Construction Details, Sections & Specifications
+        </option>
+
+        <option value="0.50|50.00">
+            Building Control Submissions
+        </option>
+
+        <option value="0.50|50.00">
+            Electrical & Plumbing Designs
+        </option>
+    </select>
+
+    <input type="text" id="rate" placeholder="Rate" readonly>
+
+    <input type="text" id="cost" placeholder="Estimated Cost" readonly>
+
+</form>
+      <script>
      
- 
-      </form>
+
+const serviceSelect = document.getElementById("serviceSelect");
+const rateInput = document.getElementById("rate");
+const costInput = document.getElementById("cost");
+
+serviceSelect.addEventListener("change", function () {
+
+    const value = this.value;
+
+    if(value){
+
+        const data = value.split("|");
+
+        rateInput.value = "£" + data[0];
+        costInput.value = "£" + data[1];
+
+    } else {
+
+        rateInput.value = "";
+        costInput.value = "";
+    }
+
+});
+
+</script>
 </div>
 
 
