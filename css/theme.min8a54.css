@@ -523,7 +523,9 @@
 .iis-facebook-app-symbol:before {
   content: "\e922";
 }
-
+.iis-tiktok:before {
+  content: "\e923";
+}
 .iis-send:before {
   content: "\e923";
 }
@@ -2370,7 +2372,7 @@ sup {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--content-color-two);
+  color: var(--e-global-color-colorsetone3) !important;
   font-size: 16px;
   font-family: var(--font-family-main);
   font-weight: 600;
@@ -4274,8 +4276,8 @@ table.give-table thead tr th {
   color: var(--color-white);
   -webkit-text-stroke-width: 1px;
   text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--heading-color-one);
-  text-stroke-color: var(--heading-color-one);
+  -webkit-text-stroke-color: var(--e-global-color-colorsetone3);
+  text-stroke-color: var(--e-global-color-colorsetone3);
 }
 
 .experience-wrapper .left_content .experience-image img {
@@ -14366,7 +14368,7 @@ body ul.page-numbers li.active a::before,
 }
 
 .mode_light .service-hover-item .service_icon_title .service-icon small {
-  background: rgb(78, 88, 77);
+  background: #73d455;
 }
 
 .mode_light .service-hover-item .service-title {
@@ -14377,14 +14379,16 @@ body ul.page-numbers li.active a::before,
   color: var(--color-white);
 }
 
-.mode_light .service-hover-item .service-header::before,
+.mode_light .service-hover-item .service-header::before {
+  background: #4bc251;
+}
 .mode_light .service-hover-item .service-header::after {
-  background: rgb(78, 88, 77);
+  background: #0d4722;
 }
 
 .mode_light .service-hover-item .service-header .service_icon_title .service-icon .icon_in {
-  background: rgb(78, 88, 77);
-  border-color: rgb(78, 88, 77);
+  background: #4bc251;
+  border-color: #4bc251;
 }
 
 .mode_light .service-hover-item .service-header .service_icon_title .service-icon .icon_in i,
@@ -14394,7 +14398,7 @@ body ul.page-numbers li.active a::before,
 
 .mode_light .service-hover-item .service-link i {
   color: var(--color-white);
-  border-color: rgb(78, 88, 77);
+  border-color: #4bc251;
 }
 
 .mode_light .service-hover-item.active .service-number {

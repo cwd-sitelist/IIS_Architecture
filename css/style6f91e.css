@@ -45,3 +45,17 @@ color: var(--e-global-color-colorsetone3) !important;
     background-position: calc(100% - 16px) center;
     background-size: 16px;
 }
+ .main-header .icons span{
+                        color:var(--e-global-color-colorsetone3) !important;
+                    }
+.social-icons.foter-icon {
+    margin-top: 60px;
+}
+.whatsappfooter {
+    position: fixed;
+    bottom: 80px;
+    height: 50px;
+    z-index: 9999;
+    width: 40px;
+    right: 25px;
+}
