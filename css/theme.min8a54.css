@@ -11193,7 +11193,7 @@ article.post.type-post {
   top: -20px;
   width: 10px;
   content: "";
-  border-bottom: 10px solid var(--color-set-one-2);
+  border-bottom: 10px solid var(--e-global-color-colorsetone3);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid transparent;
@@ -11243,7 +11243,7 @@ article.post.type-post {
 
 .social-icons.style_one ul li small {
   position: absolute;
-  background: var(--color-set-one-2);
+  background: var(--e-global-color-colorsetone3);
   color: var(--color-white);
   display: block;
   border-radius: 6px;

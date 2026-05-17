@@ -59,3 +59,11 @@ color: var(--e-global-color-colorsetone3) !important;
     width: 40px;
     right: 25px;
 }
+.ai-center{
+    align-items: center;
+}
+@media (max-width:1370px){
+.quote-form {
+    flex-direction: column;
+}
+}
