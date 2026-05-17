@@ -62,6 +62,9 @@ color: var(--e-global-color-colorsetone3) !important;
 .ai-center{
     align-items: center;
 }
+.iisr-list-items a{
+    display:inline-block;
+}
 @media (max-width:1370px){
 .quote-form {
     flex-direction: column;
