@@ -9038,7 +9038,7 @@ body:not(.block-editor-page, .wp-customizer) .wp-block-search__button-outside .w
   transition: all 0.3s ease;
   overflow: hidden;
   border-radius: 50px;
-  border: 1px solid var(--color-set-one-1);
+  border: 1px solid #98ac98;
   background: transparent;
   align-items: center;
   gap: 1px;
