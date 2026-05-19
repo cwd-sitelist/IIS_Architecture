@@ -16540,11 +16540,11 @@ body.menu-open {
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1366px) {
+/* @media (min-width: 1201px) and (max-width: 1366px) {
   .elementor .elementor-hidden-laptop {
     display: none;
   }
-}
+} */
 
 @media (min-width: 1367px) and (max-width: 2399px) {
   .elementor .elementor-hidden-desktop {
