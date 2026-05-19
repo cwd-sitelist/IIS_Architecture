@@ -175,3 +175,145 @@ form.submitting .wpcf7-spinner {
 .wpcf7-reflection > output[hidden] {
 	display: none;
 }
+
+
+
+/* Banner */
+.hero-banner{
+    position:relative;
+    width:100%;
+    height:80vh;
+    background:url("../image/homebanner-1.png") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+
+   
+}
+
+.hero-banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+	
+}
+
+.banner-content{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    padding:20px;
+    color:#fff;
+}
+
+.banner-content h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.banner-content p{
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:30px;
+	color:#fff !important;
+}
+
+
+
+
+/* Popup Form */
+.popup-form{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s;
+    z-index:999;
+}
+
+.popup-form.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.popup-box{
+    background:#fff;
+    width:450px;
+    padding:35px;
+    border-radius:12px;
+    position:relative;
+}
+
+.close-btn{
+    position:absolute;
+    top:12px;
+    right:18px;
+    font-size:32px;
+    cursor:pointer;
+}
+
+.popup-box h2{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.popup-box form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.popup-box input,
+.popup-box textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    outline:none;
+    border-radius:5px;
+}
+
+.popup-box textarea{
+    height:120px;
+    resize:none;
+}
+
+.popup-box button{
+    background:#c89b5e;
+    color:#fff;
+    border:none;
+    padding:14px;
+    cursor:pointer;
+    border-radius:5px;
+    font-size:16px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .banner-content h1{
+        font-size:38px;
+    }
+
+    .banner-content p{
+        font-size:16px;
+        line-height:26px;
+    }
+
+    .popup-box{
+        width:90%;
+        padding:25px;
+    }
+}
+@media (min-width:1200px) and (max-width:1400px) {
+	.social-icons li{
+		color:#46b450;
+	}
+	
+}
