@@ -1,0 +1,11 @@
+.scroll-carousel-viewport{overflow:hidden;position:relative}.scroll-carousel-slider{display:inline-flex;position:relative}.sc-slide{display:inline-block;position:relative} 
+ .side_rtl , .side_ltr{
+    direction: ltr;
+ }
+ .scroll_cbox.scroll_con_type_linline .btnbox{
+    padding-left:25px!important;
+    padding-right: unset!important;
+}
+.portfolio_caro_post_section .scroll_cbox{
+    min-width: 400px;
+}
