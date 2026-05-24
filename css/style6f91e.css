@@ -70,3 +70,9 @@ color: var(--e-global-color-colorsetone3) !important;
     flex-direction: column;
 }
 }
+.s_tab_btn{
+    cursor: pointer;
+}
+.top.trans i img{
+        filter: brightness(0) saturate(100%) invert(42%) sepia(96%) saturate(487%) hue-rotate(74deg) brightness(95%) contrast(90%);
+}
