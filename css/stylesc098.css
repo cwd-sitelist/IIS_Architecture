@@ -317,3 +317,22 @@ form.submitting .wpcf7-spinner {
 	}
 	
 }
+
+
+.top i {
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.top i img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+	filter: brightness(0) saturate(100%) invert(42%) sepia(96%) saturate(487%) hue-rotate(74deg) brightness(95%) contrast(90%);
+}
