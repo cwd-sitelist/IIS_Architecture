@@ -15,6 +15,19 @@
         img:is([sizes=auto i], [sizes^="auto," i]) {
             contain-intrinsic-size: 3000px 1500px
         }
+        .project_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-wrapper {
+    width: calc(33.33% - 17px);
+}
+
+.project-wrapper[style*="display: none"] {
+    display: none !important;
+}
 
         /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
     </style>
@@ -922,8 +935,7 @@
             background-size: cover;
         }
 
-        body.blog .breadcrumbs-div:before,
-        body.single-post .breadcrumbs-div:before {}
+      
 
         body.blog .breadcrumbs-div,
         body.single-post .breadcrumbs-div {
@@ -933,9 +945,7 @@
             background-size: cover;
         }
 
-        .breadcrumbs-div:before,
-        .breadcrumbs-div.both_there_2::before,
-        body.single-post .breadcrumbs-div:before {}
+  
 
         html body .breadcrumbs-div.both_there,
         html body .breadcrumbs-div,
@@ -944,12 +954,7 @@
             padding-bottom: 140px;
         }
 
-        body .breadcrumbs-div .highlight_pg {}
-
-        body .breadcrumbs-div .page_title {}
-
-        html body .breadcrumbs-div ul.breadcrumb,
-        .breadcrumbs-div.both_there_2 .breadcrumb {}
+      
 
         body {
             font-style: normal;
@@ -7384,20 +7389,20 @@
                                                 <div class="fliter_group d_flex">
                                                     <ul class="project_filter d_flex ">
                                                         <li data-filter="*" class="current theme_btn">
-                                                            Show All 
-                                                        </li>
-                                                        <li data-filter=".project_category-commercial"
-                                                            data-category="commercial" class="theme_btn">
-                                                            Upcoming Project 
-                                                        </li>
-                                                        <li data-filter=".project_category-hospitality"
-                                                            data-category="hospitality" class="theme_btn">
-                                                            Ongoing Project
-                                                        </li>
-                                                        <li data-filter=".project_category-resiential"
-                                                            data-category="resiential" class="theme_btn">
-                                                            Completed Project 
-                                                        </li>
+        Show All
+    </li>
+
+    <li data-filter=".upcoming-project" class="theme_btn">
+        Upcoming Project
+    </li>
+
+    <li data-filter=".ongoing-project" class="theme_btn">
+        Ongoing Project
+    </li>
+
+    <li data-filter=".completed-project" class="theme_btn">
+        Completed Project
+    </li>
                                                     </ul>
 
                                                 </div>
@@ -7405,7 +7410,7 @@
                                                 <div class="project_container clearfix">
 
 
-                                                    <div class="project-wrapper grid-item  project_category-resiential"
+                                                    <div class="project-wrapper grid-item  project_category-resiential completed-project"
                                                         data-title="serene heights luxury apartment"
                                                         data-date="1762157653">
 
@@ -7414,8 +7419,7 @@
 
                                                             <div class="image  d-block">
                                                                 <img loading="lazy" decoding="async" width="700"
-                                                                    height="467"
-                                                                    src="image/im-1.jpg"
+                                                                    height="467" src="image/im-1.jpg"
                                                                     class="trans wp-post-image" alt=""
                                                                     srcset="image/im-1.jpg 1200w, image/im-1.jpg 600w, image/im-1.jpg 300w, image/im-1.jpg 1024w, image/im-1.jpg 768w"
                                                                     sizes="auto, (max-width: 700px) 100vw, 700px"
@@ -7428,17 +7432,12 @@
                                                                             class="iis-029-hotels trans project_icon"></i>
                                                                     </div>
                                                                     <div class="bottom">
-                                                                      <a
-                                                                            href="#"
-                                                                            class="title-link">
+                                                                        <a href="#" class="title-link">
                                                                             <div class="trim-3 font-22 mb_10">
-                                                                                Serene Heights Luxury Apartment
+                                                                                Luxury Living Apartment
                                                                             </div>
                                                                         </a>
-                                                                        <p class="text-18 trans">From start to
-                                                                            finish, the team was professional,
-                                                                            responsive,and truly cared about
-                                                                            delivering the best&hellip;</p>
+                                                                        <p class="text-18 trans">  Successfully completed with premium interiors, elegant design, and modern living spaces crafted for comfort and style.</p>
 
 
 
@@ -7447,7 +7446,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="project-wrapper grid-item  project_category-space-planning"
+                                                    <div class="project-wrapper grid-item  project_category-space-planning completed-project"
                                                         data-title="smart space planning interior"
                                                         data-date="1762156008">
 
@@ -7456,8 +7455,7 @@
 
                                                             <div class="image  d-block">
                                                                 <img loading="lazy" decoding="async" width="700"
-                                                                    height="700"
-                                                                    src="image/im-2.jpg"
+                                                                    height="700" src="image/im-2.jpg"
                                                                     class="trans wp-post-image" alt=""
                                                                     srcset="image/im-2.jpg 768w, image/im-2.jpg 300w, image/im-2.jpg 100w, image/im-2.jpg 600w, image/im-2.jpg 150w, image/im-2.jpg 900w"
                                                                     sizes="auto, (max-width: 700px) 100vw, 700px"
@@ -7470,18 +7468,12 @@
                                                                             class="iis-007-planning trans project_icon"></i>
                                                                     </div>
                                                                     <div class="bottom">
-                                                                       <a
-                                                                            href="#"
-                                                                            class="title-link">
+                                                                        <a href="#" class="title-link">
                                                                             <div class="trim-3 font-22 mb_10">
-                                                                                Smart Space Planning Interior
+                                                                                Modern Workspace Interior
                                                                             </div>
                                                                         </a>
-                                                                        <p class="text-18 trans">Overview The
-                                                                            Enterprise Skyline District was
-                                                                            designed to reflect modern corporate
-                                                                            sophistication with functionality.
-                                                                            Our&hellip;</p>
+                                                                        <p class="text-18 trans"> Finished with calming aesthetics and luxurious elements to create a peaceful and refreshing wellness experience.</p>
 
 
 
@@ -7490,7 +7482,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="project-wrapper grid-item  project_category-commercial"
+                                                    <div class="project-wrapper grid-item  project_category-commercial completed-project"
                                                         data-title="calm core wellness spa" data-date="1762016501">
 
                                                         <div
@@ -7498,8 +7490,7 @@
 
                                                             <div class="image  d-block">
                                                                 <img loading="lazy" decoding="async" width="700"
-                                                                    height="400"
-                                                                    src="image/im-3.jpg"
+                                                                    height="400" src="image/im-3.jpg"
                                                                     class="trans wp-post-image" alt=""
                                                                     srcset="image/im-3.jpg 1500w, image/im-3.jpg 600w, image/im-3.jpg 300w, image/im-3.jpg 1024w, image/im-3.jpg 768w"
                                                                     sizes="auto, (max-width: 700px) 100vw, 700px"
@@ -7511,17 +7502,12 @@
                                                                         <i class="iis-011-spa trans project_icon"></i>
                                                                     </div>
                                                                     <div class="bottom">
-                                                                         <a
-                                                                            href="##"
-                                                                            class="title-link">
+                                                                        <a href="##" class="title-link">
                                                                             <div class="trim-3 font-22 mb_10">
-                                                                                Calm Core Wellness Spa</div>
+                                                                                  Premium Co-Working Space</div>
                                                                         </a>
-                                                                        <p class="text-18 trans">Overview The
-                                                                            Enterprise Skyline District was
-                                                                            designed to reflect modern corporate
-                                                                            sophistication with functionality.
-                                                                            Our&hellip;</p>
+                                                                        <p class="text-18 trans">Currently under development with modern facilities, collaborative workspaces, and a professional atmosphere.
+</p>
 
 
 
@@ -7530,7 +7516,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="project-wrapper grid-item  project_category-commercial"
+                                                    <div class="project-wrapper grid-item  project_category-commercial ongoing-project"
                                                         data-title="prime axis co-working hub" data-date="1762016293">
 
                                                         <div
@@ -7538,10 +7524,9 @@
 
                                                             <div class="image  d-block">
                                                                 <img loading="lazy" decoding="async" width="700"
-                                                                    height="467"
-                                                                    src="image/im-3.jpg"
+                                                                    height="467" src="image/im-7.jpg"
                                                                     class="trans wp-post-image" alt=""
-                                                                    srcset="image/im-3.jpg 1200w, image/im-3.jpg 600w, image/im-3.jpg 300w, image/im-3.jpg 1024w, image/im-3.jpg 768w"
+                                                                    srcset="image/im-7.jpg 1200w, image/im-7.jpg 600w, image/im-7.jpg 300w, image/im-7.jpg 1024w, image/im-7.jpg 768w"
                                                                     sizes="auto, (max-width: 700px) 100vw, 700px"
                                                                     loading="lazy" />
                                                             </div>
@@ -7552,17 +7537,11 @@
                                                                             class="iis-017-digital-nomad-hub trans project_icon"></i>
                                                                     </div>
                                                                     <div class="bottom">
-                                                                        <a
-                                                                            href="#"
-                                                                            class="title-link">
+                                                                        <a href="#" class="title-link">
                                                                             <div class="trim-3 font-22 mb_10">
-                                                                                Prime Axis Co-Working Hub</div>
+                                                                                  Elegant Villa Interior</div>
                                                                         </a>
-                                                                        <p class="text-18 trans">Overview The
-                                                                            Enterprise Skyline District was
-                                                                            designed to reflect modern corporate
-                                                                            sophistication with functionality.
-                                                                            Our&hellip;</p>
+                                                                        <p class="text-18 trans">Ongoing interior execution focused on luxury finishes, comfort-driven spaces, and contemporary aesthetics.</p>
 
 
 
@@ -7571,7 +7550,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="project-wrapper grid-item  project_category-resiential"
+                                                    <div class="project-wrapper grid-item  project_category-resiential ongoing-project"
                                                         data-title="tranquil nest villa interior"
                                                         data-date="1762016268">
 
@@ -7580,8 +7559,7 @@
 
                                                             <div class="image  d-block">
                                                                 <img loading="lazy" decoding="async" width="700"
-                                                                    height="467"
-                                                                    src="image/im-4.jpg"
+                                                                    height="467" src="image/im-4.jpg"
                                                                     class="trans wp-post-image" alt=""
                                                                     srcset="image/im-4.jpg 1200w,image/im-4.jpg 600w, image/im-4.jpg 300w, image/im-4.jpg 1024w, image/im-4.jpg 768w"
                                                                     sizes="auto, (max-width: 700px) 100vw, 700px"
@@ -7594,18 +7572,14 @@
                                                                             class="iis-023-interior trans project_icon"></i>
                                                                     </div>
                                                                     <div class="bottom">
-                                                                       <a
-                                                                            href="#"
-                                                                            class="title-link">
+                                                                        <a href="#" class="title-link">
                                                                             <div class="trim-3 font-22 mb_10">
-                                                                                Tranquil Nest Villa Interior
+                                                                                    Luxury Resort Project
+
                                                                             </div>
                                                                         </a>
-                                                                        <p class="text-18 trans">Overview The
-                                                                            Enterprise Skyline District was
-                                                                            designed to reflect modern corporate
-                                                                            sophistication with functionality.
-                                                                            Our&hellip;</p>
+                                                                        <p class="text-18 trans">In progress with high-end hospitality concepts, stylish architecture, and exceptional guest experiences.
+</p>
 
 
 
@@ -7614,7 +7588,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="project-wrapper grid-item  project_category-space-planning"
+                                                    <div class="project-wrapper grid-item  project_category-space-planning upcoming-project"
                                                         data-title="axis flow smart office planning"
                                                         data-date="1762016251">
 
@@ -7623,8 +7597,7 @@
 
                                                             <div class="image  d-block">
                                                                 <img loading="lazy" decoding="async" width="700"
-                                                                    height="467"
-                                                                    src="image/im-5.jpg"
+                                                                    height="467" src="image/im-5.jpg"
                                                                     class="trans wp-post-image" alt=""
                                                                     srcset="image/im-5.jpg 1200w, image/im-5.jpg 600w, image/im-5.jpg 300w, image/im-5.jpg 1024w, image/im-5.jpg 768w"
                                                                     sizes="auto, (max-width: 700px) 100vw, 700px"
@@ -7637,18 +7610,12 @@
                                                                             class="iis-house-plan trans project_icon"></i>
                                                                     </div>
                                                                     <div class="bottom">
-                                                                      <a
-                                                                            href="#"
-                                                                            class="title-link">
+                                                                        <a href="#" class="title-link">
                                                                             <div class="trim-3 font-22 mb_10">
-                                                                                Axis Flow Smart Office Planning
+                                                                                Smart Office Planning
                                                                             </div>
                                                                         </a>
-                                                                        <p class="text-18 trans">Overview The
-                                                                            Enterprise Skyline District was
-                                                                            designed to reflect modern corporate
-                                                                            sophistication with functionality.
-                                                                            Our&hellip;</p>
+                                                                        <p class="text-18 trans"> Upcoming office concept designed for productivity, innovation, and seamless workspace functionality.</p>
 
 
 
@@ -7657,7 +7624,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="project-wrapper grid-item  project_category-hospitality"
+                                                    <div class="project-wrapper grid-item  project_category-hospitality upcoming-project"
                                                         data-title="vista grande boutique hotel" data-date="1762016239">
 
                                                         <div
@@ -7665,8 +7632,7 @@
 
                                                             <div class="image  d-block">
                                                                 <img loading="lazy" decoding="async" width="700"
-                                                                    height="467"
-                                                                    src="image/im-2.jpg"
+                                                                    height="467" src="image/im-2.jpg"
                                                                     class="trans wp-post-image" alt=""
                                                                     srcset="image/im-2.jpg 1200w, image/im-2.jpg 600w, image/im-2.jpg 300w, image/im-2.jpg 1024w, image/im-2.jpg 768w"
                                                                     sizes="auto, (max-width: 700px) 100vw, 700px"
@@ -7679,18 +7645,12 @@
                                                                             class="iis-030-hotel-1 trans project_icon"></i>
                                                                     </div>
                                                                     <div class="bottom">
-                                                                       <a
-                                                                            href="#"
-                                                                            class="title-link">
+                                                                        <a href="#" class="title-link">
                                                                             <div class="trim-3 font-22 mb_10">
-                                                                                Vista Grande Boutique Hotel
+                                                                                   Boutique Hotel Experience
                                                                             </div>
                                                                         </a>
-                                                                         <p class="text-18 trans">Overview The
-                                                                            Enterprise Skyline District was
-                                                                            designed to reflect modern corporate
-                                                                            sophistication with functionality.
-                                                                            Our&hellip;</p>
+                                                                        <p class="text-18 trans">Planned with elegant interiors and premium hospitality features to deliver a memorable guest experience.</p>
 
 
 
@@ -7699,7 +7659,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="project-wrapper grid-item  project_category-hospitality"
+                                                    <div class="project-wrapper grid-item  project_category-hospitality ongoing-project"
                                                         data-title="majestic crown resort" data-date="1762015725">
 
                                                         <div
@@ -7707,10 +7667,9 @@
 
                                                             <div class="image  d-block">
                                                                 <img loading="lazy" decoding="async" width="700"
-                                                                    height="467"
-                                                                    src="image/im-2.jpg"
+                                                                    height="467" src="image/im-6.jpg"
                                                                     class="trans wp-post-image" alt=""
-                                                                    srcset="image/im-2.jpg 1200w, image/im-2.jpg 600w, image/im-2.jpg 300w, image/im-2.jpg 1024w, image/im-2.jpg 768w"
+                                                                    srcset="image/im-6.jpg 1200w, image/im-6.jpg 600w, image/im-6.jpg 300w, image/im-6.jpg 1024w, image/im-6.jpg 768w"
                                                                     sizes="auto, (max-width: 700px) 100vw, 700px"
                                                                     loading="lazy" />
                                                             </div>
@@ -7722,10 +7681,6 @@
                                                                     </div>
                                                                     <div class="bottom">
                                                                         <a href="#"
-                                                                            class="category_btn "> <i
-                                                                                class="iis-file"></i>
-                                                                            Hospitality</a> <a
-                                                                            href="#"
                                                                             class="title-link">
                                                                             <div class="trim-3 font-22 mb_10">
                                                                                 Majestic Crown Resort</div>
@@ -11086,6 +11041,47 @@
             <div class="quick-view-loader" aria-live="polite"></div>
         </div>
     </div>
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filterButtons = document.querySelectorAll(".project_filter li");
+    const projects = document.querySelectorAll(".project-wrapper");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function () {
+
+            // active button
+            filterButtons.forEach(btn => btn.classList.remove("current"));
+            this.classList.add("current");
+
+            const filter = this.getAttribute("data-filter");
+
+            projects.forEach(project => {
+
+                if (filter === "*") {
+                    project.style.display = "block";
+                } else {
+                    const className = filter.replace(".", "");
+
+                    if (project.classList.contains(className)) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+                }
+
+            });
+
+            // fix top empty space
+            setTimeout(() => {
+                window.dispatchEvent(new Event('resize'));
+            }, 100);
+
+        });
+    });
+
+});
+</script>
 
 </body>
 
