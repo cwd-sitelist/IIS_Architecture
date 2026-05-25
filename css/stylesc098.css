@@ -336,3 +336,7 @@ form.submitting .wpcf7-spinner {
     object-fit: contain;
 	filter: brightness(0) saturate(100%) invert(42%) sepia(96%) saturate(487%) hue-rotate(74deg) brightness(95%) contrast(90%);
 }
+.tab-icon img{
+	 width:50px;
+	 height: 50px;
+}
