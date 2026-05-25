@@ -4,7 +4,7 @@
 (function($) {
 	("use strict");
 
-function decoria_Scroll_carousel() {
+function iis_Scroll_carousel() {
     let selector = '.scroll_carousel_box'; // Replace with your fixed selector
     let elems = document.querySelectorAll(selector);
     if (elems.length > 0) {
@@ -31,13 +31,13 @@ function decoria_Scroll_carousel() {
 
 $(window).on('elementor/frontend/init', function() { 
     
-    elementorFrontend.hooks.addAction('frontend/element_ready/decoria-instagram-v1.default', decoria_Scroll_carousel); 
+    elementorFrontend.hooks.addAction('frontend/element_ready/iis-instagram-v1.default', iis_Scroll_carousel); 
    
 });
 
 jQuery(document).on('ready', function () { 
   
-    decoria_Scroll_carousel();
+    iis_Scroll_carousel();
  
 }); 
 

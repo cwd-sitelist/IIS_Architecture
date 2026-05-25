@@ -1,5 +1,5 @@
 /**
- * Decoria Leaflet Map Initialization
+ * iis Leaflet Map Initialization
  * 
  * External JavaScript file for initializing Leaflet maps
  * Works in both frontend and Elementor editor
@@ -11,7 +11,7 @@
     /**
      * Initialize Leaflet Map
      */
-    function initDecoriaLeafletMap(mapElement) {
+    function initiisLeafletMap(mapElement) {
         // Check if Leaflet is loaded
         if (typeof L === 'undefined') {
             console.error('Leaflet library is not loaded');
@@ -127,8 +127,8 @@
      * Initialize all maps on the page
      */
     function initAllMaps() {
-        $('.decoria-leaflet-map').each(function() {
-            initDecoriaLeafletMap(this);
+        $('.iis-leaflet-map').each(function() {
+            initiisLeafletMap(this);
         });
     }
 
@@ -153,12 +153,12 @@
     $(window).on('elementor/frontend/init', function() {
         // For Elementor editor
         if (typeof elementorFrontend !== 'undefined') {
-            elementorFrontend.hooks.addAction('frontend/element_ready/decoria_leaflet_maps.default', function($scope) {
-                var mapElement = $scope.find('.decoria-leaflet-map')[0];
+            elementorFrontend.hooks.addAction('frontend/element_ready/iis_leaflet_maps.default', function($scope) {
+                var mapElement = $scope.find('.iis-leaflet-map')[0];
                 if (mapElement) {
                     // Wait a bit for Leaflet to load
                     setTimeout(function() {
-                        initDecoriaLeafletMap(mapElement);
+                        initiisLeafletMap(mapElement);
                     }, 300);
                 }
             });
@@ -171,8 +171,8 @@
     $(window).on('load', function() {
         // Additional initialization for any maps that might have been missed
         setTimeout(function() {
-            $('.decoria-leaflet-map:not([data-map-initialized="true"])').each(function() {
-                initDecoriaLeafletMap(this);
+            $('.iis-leaflet-map:not([data-map-initialized="true"])').each(function() {
+                initiisLeafletMap(this);
             });
         }, 500);
     });
