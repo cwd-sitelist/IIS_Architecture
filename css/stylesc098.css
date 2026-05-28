@@ -193,6 +193,7 @@ form.submitting .wpcf7-spinner {
    
 }
 
+
 .hero-banner::before{
     content:"";
     position:absolute;
@@ -298,27 +299,107 @@ form.submitting .wpcf7-spinner {
 /* Responsive */
 @media(max-width:768px){
     .banner-content h1{
-        font-size:38px;
+        font-size:27px;
     }
 
     .banner-content p{
         font-size:16px;
         line-height:26px;
     }
+	.elementor-1258 .elementor-element.elementor-element-0f55640 .header_contact .text-16{
+		font-size: 26px !important;
+	}
 
     .popup-box{
         width:90%;
         padding:25px;
     }
+	.elementor-813 .elementor-element.elementor-element-a971203 .title_all_box .common_title {
+    font-size: 24px;
+    line-height: 25px;
+    margin: 0px 0px 13px 0px;
+}
+.tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area img, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area video source, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area iframe {
+    height: 750px;
+    width: 100%;
+    border-bottom-right-radius: 285px;
+    border-bottom-left-radius: 285px;
+    -o-object-fit: cover;
+    margin: 20px 0px 0px 8px !important;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+}
+.elementor-4122 .elementor-element.elementor-element-79206db{
+	padding-left: 0px !important;
+}
+.tab_from_block_post_two.tab_new_style_one {
+    display: block !important;
+}
+.tab_from_block_post_two.tab_new_style_one .tab_top_content_overflow {
+    width: 100% !important;
+	padding-left: 20px;
+}
+element.elementor-element-8e3cb4d .title_all_box .common_title {
+    font-size: 38px;
+    line-height: 40px;
+    margin: 0px 0px 0px 0px;
+}
+.tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-text-area
+
+ {
+    text-align: center;
+    position: absolute;
+    bottom: 249px !important;
+        width: 300px !important;
+        height: 312px !important;
+        
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    z-index: 1;
+    background: var(--background-white);
+    padding: 40px;
+    border-radius: 100%;
+}
+.tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-text-area .tab-main-title {
+    padding-bottom: 0px !important;
+    margin-bottom: 0 !important;
+    font-size: 26px;
+    line-height: normal;
+}
+.tab_from_block_post_two.tab_new_style_one .s_tabs_content {
+    width: calc(100% - 1rem) !important;
+}
+ 
+
 }
 @media (min-width:1200px) and (max-width:1400px) {
 	.social-icons li{
 		color:#46b450;
 	}
 	
+.tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area img, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area video source, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area iframe
+
+ {
+    height: 750px !important;
+    width: 100% !important;
+    border-bottom-right-radius: 253px;
+    border-bottom-left-radius: 285px;
+    
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
-
+	
+}
 .top i {
     background: #fff;
     width: 80px;
@@ -340,3 +421,159 @@ form.submitting .wpcf7-spinner {
 	 width:50px;
 	 height: 50px;
 }
+
+/* ==========================
+   TABLET VIEW
+========================== */
+@media (max-width: 1024px) {
+
+    .project_filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .project_filter li {
+        font-size: 14px;
+        padding: 10px 18px;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    .project_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .project-wrapper {
+        width: 100%;
+    }
+
+    .project_card .image img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .contentbox {
+        padding: 20px 15px;
+    }
+
+    .trim-3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .text-18 {
+        font-size: 15px;
+        line-height: 26px;
+    }
+}
+
+
+/* ==========================
+   MOBILE VIEW
+========================== */
+@media (max-width: 767px) {
+
+    /* Tabs responsive */
+    .fliter_group {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 10px;
+    }
+
+    .project_filter {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: max-content;
+        padding: 0 15px;
+    }
+
+    .project_filter li {
+        font-size: 13px;
+        padding: 10px 18px;
+        border-radius: 30px;
+        flex-shrink: 0;
+    }
+
+    /* Single card layout */
+    .project_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-wrapper {
+        width: 100%;
+    }
+
+    /* Image responsive */
+    .project_card .image img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    /* Content spacing */
+    .contentbox {
+        padding: 20px 15px;
+    }
+
+    .contentbox_inner {
+        text-align: center;
+    }
+
+    .contentbox .top img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .trim-3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .text-18 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+
+/* Mobile View */
+@media (max-width: 767px) {
+
+    .project_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-wrapper {
+        width: 100% !important;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .project_card .image {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .project_card .image img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        border-radius: 15px;
+    }
+}
+
