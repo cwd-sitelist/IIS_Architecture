@@ -319,6 +319,10 @@ form.submitting .wpcf7-spinner {
     line-height: 25px !important;
     margin: 0px 0px 13px 0px;
 }
+.project_filter li.current, .project_filter li:hover, .project_filter li.active, .iis_project_tab_design .showcase_tabs_btns li.current, .iis_project_tab_design .showcase_tabs_btns li:hover, .iis_project_tab_design .showcase_tabs_btns li.active {
+    color: var(--heading-color-one);
+    width: 100%;
+}
 .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area img, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area video source, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area iframe {
     height: 750px;
     width: 100%;
