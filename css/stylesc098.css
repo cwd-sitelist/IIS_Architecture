@@ -301,6 +301,18 @@ form.submitting .wpcf7-spinner {
     .banner-content h1{
         font-size:27px;
     }
+    .theme-button-new span {
+    padding: 13px 25px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: var(--e-global-color-colorsetone3);
+    color: var(--color-white);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 13px !important;
+}
 
     .banner-content p{
         font-size:16px;
@@ -325,6 +337,17 @@ form.submitting .wpcf7-spinner {
 }
 .mm-contact-text{
     color: #384538 !important;
+}
+.experience-wrapper .left_content .experience-number {
+    position: relative;
+    font-size: 100px !important;
+    line-height: 150px;
+    margin-bottom: -80px;
+    color: var(--color-white);
+    -webkit-text-stroke-width: 1px;
+    -text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--e-global-color-colorsetone3);
+    -text-stroke-color: var(--e-global-color-colorsetone3);
 }
 .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area img, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area video source, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area iframe {
     height: 750px;
