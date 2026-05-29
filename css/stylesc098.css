@@ -323,6 +323,9 @@ form.submitting .wpcf7-spinner {
     color: var(--heading-color-one);
     width: 100%;
 }
+.mm-contact-text{
+    color: #384538 !important;
+}
 .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area img, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area video source, .tab_from_block_post_two.tab_new_style_one .s_tabs_content .tab-flex-container .tab-image-area iframe {
     height: 750px;
     width: 100%;
