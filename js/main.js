@@ -42,3 +42,9 @@
         });
 
 
+const menuCloseBtn = document.getElementById("menuCloseBtn");
+    const mobileMenu = document.querySelector(".mobile_menu_area");
+
+    menuCloseBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+    });

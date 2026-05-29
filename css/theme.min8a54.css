@@ -15464,15 +15464,50 @@ html body .desktop_navbar_nav .menu-item.mob_none>a.nav_link {
 .mobile_menu_area.active {
   transform: translateX(0);
 }
-
-.mobile_menu_area .menu-close-btn {
+ 
+ /* .mobile_menu_area .menu-close-btn {
   position: absolute;
   right: 15px;
   top: 15px;
   cursor: pointer;
   color: var(--menu-color);
   z-index: 999;
+  width: 40px;
+  height: 40px;
+}  */
+  .menu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 28px;
+    z-index: 999999;
 }
+
+.mobile_menu_area {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 320px;
+    height: 100vh;
+    background: #fff;
+    transition: 0.4s ease;
+    z-index: 9999999;
+    padding: 60px 20px 20px;
+}
+
+.mobile_menu_area.active {
+    left: 0;
+}
+ 
 
 .mobile_menu_area .menu-close-btn i {
   font-size: 24px;
