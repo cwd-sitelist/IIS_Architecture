@@ -2155,11 +2155,16 @@
 
         @media(max-width:767px) {
             .elementor-4107 .elementor-element.elementor-element-1ab105d {
-                --padding-top: 10rem;
-                --padding-bottom: 5rem;
+                --padding-top: 3rem;
+                --padding-bottom: 3rem;
                 --padding-left: 1rem;
                 --padding-right: 1rem;
             }
+            .elementor-813 .elementor-element.elementor-element-a971203 .title_all_box .common_title {
+    font-size: 30px !important;
+    line-height: 37px !important;
+    margin: 0px 0px 13px 0px;
+}
 
             .elementor-4107 .elementor-element.elementor-element-25cfeec {
                 --border-radius: 20px 20px 20px 20px;

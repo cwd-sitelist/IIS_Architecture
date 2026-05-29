@@ -350,9 +350,9 @@ element.elementor-element-8e3cb4d .title_all_box .common_title {
  {
     text-align: center;
     position: absolute;
-    bottom: 249px !important;
-        width: 300px !important;
-        height: 312px !important;
+        bottom: 249px !important;
+        width: 324px !important;
+        height: 340px !important;
         
     right: 0;
     left: 0;
@@ -454,10 +454,15 @@ element.elementor-element-8e3cb4d .title_all_box .common_title {
 
     .project_card .image img {
         width: 100%;
-        height: 280px;
+        height: 400px !important;
         object-fit: cover;
         border-radius: 20px;
     }
+    .elementor-4122 .elementor-element.elementor-element-8e3cb4d .title_all_box .common_title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0px 0px 0px 0px;
+}
 
     .contentbox {
         padding: 20px 15px;
@@ -526,13 +531,11 @@ element.elementor-element-8e3cb4d .title_all_box .common_title {
         padding: 20px 15px;
     }
 
-    .contentbox_inner {
-        text-align: center;
-    }
+  
 
     .contentbox .top img {
-        width: 45px;
-        height: 45px;
+        width: 34px;
+        height: 34px;
     }
 
     .trim-3 {
@@ -569,11 +572,37 @@ element.elementor-element-8e3cb4d .title_all_box .common_title {
     }
 
     .project_card .image img {
-        width: 100%;
-        height: 250px;
+        width: 100% !important;
+        height: 250px !important;
         object-fit: cover;
         display: block;
         border-radius: 15px;
     }
+    .top i {
+    background: #fff;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.project_card.style_three .contentbox .contentbox_inner {
+    position: relative;
+    z-index: 1;
+    padding: 0px !important;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project_card.style_three .text-18, .project_card.style_three .project-custom-text, .project_card.style_three .text-17
+
+ {
+    color: var(--color-white) !important;
+    font-size: 13px !important;
+}
 }
 

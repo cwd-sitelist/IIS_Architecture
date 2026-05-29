@@ -4327,18 +4327,12 @@ table.give-table thead tr th {
 .experience-wrapper .right_content .experience-text::after {
   margin-top: 5px;
 }
-
 @media (max-width: 1200px) {
   .experience-wrapper .left_content {
     min-width: 93%;
     border-radius: 20px;
   }
-
-  .experience-wrapper .left_content .experience-image img {
-    height: 550px;
-  }
 }
-
 @media (max-width: 768px) {
   .experience-wrapper {
     flex-direction: column;
@@ -7232,7 +7226,7 @@ ul.breadcrumb li::before {
   content: "\e951";
   font-family: "iis";
   font-size: 14px;
-  top: 0;
+  top: 5px;
   bottom: 0;
   margin: auto;
   right: -21px;
@@ -27949,5 +27943,6 @@ body .fct-product-quantity .fct-quantity-input {
   align-items: center;
   gap: 30px;
 }
+
 
 /*# sourceMappingURL=theme.min.css.map */
