@@ -4436,3 +4436,72 @@
   .elementor-1258 .elementor-element.elementor-element-763c3d8 .social-icons.style_two ul li small{
     color:#fff !important;
   }
+
+
+ .quote-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-row input {
+    width: 50%;
+}
+
+/* Input, Select & Textarea */
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    font-size: 18px;
+    outline: none;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Textarea */
+.quote-form textarea {
+    height: 72px !important;
+    resize: none;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #3f4d3e;
+    color: #fff;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row input {
+        width: 100%;
+    }
+}
+
+.banner-logo img {
+    width: 150px;   /* adjust size */
+    margin: auto;
+    object-fit: contain;
+    
+}
+

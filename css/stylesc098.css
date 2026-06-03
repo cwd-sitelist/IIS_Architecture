@@ -248,7 +248,7 @@ form.submitting .wpcf7-spinner {
 .popup-box{
     background:#fff;
     width:450px;
-    padding:35px;
+    padding:20px;
     border-radius:12px;
     position:relative;
 }
@@ -519,7 +519,7 @@ element.elementor-element-8e3cb4d .title_all_box .common_title {
         white-space: nowrap;
         padding-bottom: 10px;
     }
-
+ 
     .project_filter {
         display: flex !important;
         flex-wrap: wrap;
@@ -653,4 +653,7 @@ p:not(.am-fs-sb__step-heading, .wp-block){
     font-size: 13px !important;
 }
 }
-
+.header_contact .content a {
+    white-space: nowrap;
+    display: inline-block;
+}
