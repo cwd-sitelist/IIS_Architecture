@@ -4505,3 +4505,22 @@
     
 }
 
+.whatsapp-btn {
+    width: 55px;
+    height: 55px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 28px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    background: #1ebe5d;
+}
