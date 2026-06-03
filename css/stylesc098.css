@@ -243,6 +243,9 @@ form.submitting .wpcf7-spinner {
 .popup-form.active{
     opacity:1;
     visibility:visible;
+     position:relative;
+     top: -226px;
+
 }
 
 .popup-box{
@@ -250,7 +253,10 @@ form.submitting .wpcf7-spinner {
     width:450px;
     padding:20px;
     border-radius:12px;
-    position:relative;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
 }
 
 .close-btn{
