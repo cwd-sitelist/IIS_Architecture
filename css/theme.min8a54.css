@@ -8255,6 +8255,7 @@ body:not(.block-editor-page, .wp-customizer) textarea,
 .editor-visual-editor textarea {
   height: 210px;
   resize: none;
+  background: #fff;
 }
 
 body:not(.block-editor-page, .wp-customizer) .wc-block-components-checkbox svg,
