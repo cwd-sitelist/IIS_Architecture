@@ -7226,7 +7226,7 @@ ul.breadcrumb li::before {
   content: "\e951";
   font-family: "iis";
   font-size: 14px;
-  top: 5px;
+  top: 1px;
   bottom: 0;
   margin: auto;
   right: -21px;
