@@ -4524,3 +4524,142 @@
     transform: scale(1.1);
     background: #1ebe5d;
 }
+
+.process-section {
+    padding: 80px 20px;
+    background: #f5f5f5;
+}
+
+.process-section .container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.box ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.box ul li {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.sectors {
+    width: 280px;
+}
+
+.sectors ul {
+    border: 1px solid #999;
+    padding: 20px 30px;
+    background: #fff;
+}
+
+.services {
+    width: 550px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    margin-bottom: 22px;
+    font-size: 20px;
+}
+
+.arrow {
+    font-size: 80px;
+    color: #0b5c85;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.reviews {
+    width: 350px;
+}
+
+.review-card {
+    border: 1px solid #999;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .process-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+    .sectors,
+    .services,
+    .reviews {
+        width: 100%;
+    }
+}
+
+.process-section {
+    padding: 80px 20px;
+    background: #f5f5f5;
+}
+
+.process-section .container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    /* Outer Box */
+    border: 2px solid #d5d5d5;
+    padding: 50px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.process-section .container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    border: 1px solid #cfcfcf;
+    padding: 50px;
+    background: #fff;
+}
+
+.outer-box{
+    max-width:1400px;
+    margin:auto;
+    padding:50px;
+    border:1px solid #d8d8d8;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
