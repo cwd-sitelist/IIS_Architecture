@@ -4525,3 +4525,75 @@
     background: #1ebe5d;
 }
 
+   
+   .service-inner {
+    display: flex;
+    gap: 25px;
+        margin-top: 30px;
+}
+.service-inner .cservice img {
+    width: 50px;
+    filter:invert(1);
+}
+.service-inner .review-card1 img {
+    width: 70px;
+     filter:invert(0);
+}
+.cservice {
+    border: 1px solid #318a4b;
+        padding: 15px;
+            border-radius: 40px 15px;
+}
+.cservice ul{
+    margin:0px;
+    padding:0px;
+}
+.cservice.service-2 {
+    flex: 2;
+}
+.service-inner ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+}
+.service-inner ul li:before {
+       content: "➜";
+    position: absolute;
+    left: 0;
+    color: #2f8f46;
+    font-weight: bold;
+}
+.cservice.service-1, .cservice.service-3 {
+    flex: 1;
+}
+.service-descp{
+    position: relative;
+    text-align: center;
+}
+.service-descp span{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-58%, -74%);
+    background: #318a4b;
+    padding: 10px;
+    border-radius: 50px;
+}
+.review-card1 {
+    border: 1px solid #318a4b;
+    margin: 0px 0px 15px;
+    padding: 10px;
+    position: relative;
+        border-radius: 40px 0px;
+}
+.service-descp h3 {
+    padding-top: 20px;
+        font-size: 23px;
+}
+.review-card1 span {
+    position: absolute;
+    top: -8px;
+}
+section.service-do {
+    margin-top: 50px;
+}
