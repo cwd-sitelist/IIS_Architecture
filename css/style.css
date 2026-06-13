@@ -4535,6 +4535,9 @@
     width: 50px;
     filter:invert(1);
 }
+.service-inner .cservice .sector-list img{
+filter:invert(0);
+}
 .service-inner .review-card1 img {
     width: 70px;
      filter:invert(0);
@@ -4559,7 +4562,7 @@
     height: 50px;
     z-index: 999;
 }
-}
+
 .cservice ul{
     margin:0px;
     padding:0px;
