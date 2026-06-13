@@ -4528,7 +4528,7 @@
    
    .service-inner {
     display: flex;
-    gap: 25px;
+    gap: 35px;
         margin-top: 30px;
 }
 .service-inner .cservice img {
@@ -4546,12 +4546,19 @@
             position: relative;
 }
 .cservice.service-1:after,.cservice.service-2:after {
-    content: "➜";
+       content: "";
+    background: url(../image/arrow.png) no-repeat center;
+    filter: brightness(0) saturate(100%) invert(40%) sepia(20%) saturate(1000%) hue-rotate(80deg);
     position: absolute;
-    right: -22px;
-    color: #2f8f46;
+    right: -35px;
     font-weight: 600;
-    top: 60px;
+    background-size: contain;
+    top: 50%;
+    transform: translate(4%, -72%);
+    width: 40px;
+    height: 50px;
+    z-index: 999;
+}
 }
 .cservice ul{
     margin:0px;
