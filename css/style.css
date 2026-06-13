@@ -4616,3 +4616,12 @@ filter:invert(0);
 section.service-do {
     margin-top: 50px;
 }
+    @media (max-width: 768px) {
+.service-inner {
+    display: block;
+}
+.cservice{    margin-bottom: 50px;}
+.cservice.service-1:after, .cservice.service-2:after{
+    display: none;
+}
+    }

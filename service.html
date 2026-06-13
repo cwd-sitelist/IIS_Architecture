@@ -6499,7 +6499,7 @@ opacity:1!important;
                                             </div>
                                              <div class="elementor-widget-container">
                                                     <div class="service-inner">
-   <div class="cservice service-1">
+   <div class="cservice service-1 animate-left delay-1" data-delay="0.3">
     <div class="service-descp">
          <span><img src="image/industry.png"></span>
         <h3>01. Sectors</h3>
@@ -6520,7 +6520,7 @@ opacity:1!important;
     </div>
       
    </div>
-    <div class="cservice service-2">
+    <div class="cservice service-2 animate-left delay-2" data-delay="0.7">
         <div class="service-descp">
          <span><img src="image/b2c.png"></span>
        <h3>02. Services</h3>
@@ -6541,7 +6541,7 @@ opacity:1!important;
             </ul>
 </div>
    </div>
-    <div class="cservice service-3">
+    <div class="cservice service-3 animate-left delay-3" data-delay="1.0">
         <div class="service-descp">
           <span><img src="image/customer-review.png"></span>
        <h3>03. Client Reviews</h3>
@@ -8305,7 +8305,39 @@ opacity:1!important;
         <!-- <script type='module'  crossorigin src='js/public.22539921a361.js'></script> -->
         <!-- <script src="js/FluentCartAppf91e.js" type="module" id="fluent-cart-app-js"></script> -->
         <script type="text/javascript" src="js/toastify-js-1.12.0f91e.js" id="fluent-cart-fluentcart-toastify-notify-style-js"></script>
-        <script type="text/javascript" defer src="js/forms7762.js" id="mc4wp-forms-api-js"></script>
+<script>
+  function getDataDelay(element, defaultDelay) {
+    const delay = element.dataset.delay;
+    return delay !== undefined ? parseFloat(delay) || 0 : defaultDelay;
+  }
+
+  document.querySelectorAll(".animate-left").forEach((element) => {
+    gsap.from(element, {
+      x: -100,
+      opacity: 0,
+      duration: 0.8,
+      delay: getDataDelay(element, 0),
+    });
+  });
+
+  document.querySelectorAll(".animate-bottom").forEach((element) => {
+    gsap.from(element, {
+      y: 100,
+      opacity: 0,
+      duration: 0.8,
+      delay: getDataDelay(element, 0.3),
+    });
+  });
+
+  document.querySelectorAll(".animate-right").forEach((element) => {
+    gsap.from(element, {
+      x: 100,
+      opacity: 0,
+      duration: 0.8,
+      delay: getDataDelay(element, 0.6),
+    });
+  });
+    </script>
         <div class="quick-view-modal" aria-hidden="true" role="dialog" aria-label="Quick product view">
             <div class="quick-view-overlay"></div>
             <div class="quick-view-content" role="document">

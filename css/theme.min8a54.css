@@ -14261,6 +14261,7 @@ body ul.page-numbers li.active a::before,
   min-width: 470px;
   position: relative;
   z-index: 77;
+     pointer-events:none;
 }
 
 .service-hover-item .service-content .service_content_outer {

@@ -28,12 +28,17 @@ appearance:none;
     color: #f1f1f1;
 }
 .iisr-list-item a:hover,  .header_contact .text-16:hover {
-    color: #d5d5d5 !important;
+      color: var(--e-global-color-colorsetone3) !important;
 }
 .header_contact .text-16.address-text:hover {
     color: #fff !important;
 }
-
+.header_contact .text-16.ph-no:hover {
+    color: #d5d5d5 !important;
+}
+#footer_contents .text-16:hover {
+    color: #000 !important;
+}
 
 h2.common_title.tru{
 color: var(--e-global-color-colorsetone3) !important;
