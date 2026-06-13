@@ -2149,6 +2149,7 @@ sup {
   position: relative;
   top: unset;
   pointer-events: fill;
+  cursor: pointer;
 }
 
 .arrow_type_two .comm_arrow_box .swiper-button-prev {
