@@ -4543,6 +4543,15 @@
     border: 1px solid #318a4b;
         padding: 15px;
             border-radius: 40px 15px;
+            position: relative;
+}
+.cservice.service-1:after,.cservice.service-2:after {
+    content: "➜";
+    position: absolute;
+    right: -22px;
+    color: #2f8f46;
+    font-weight: 600;
+    top: 60px;
 }
 .cservice ul{
     margin:0px;
