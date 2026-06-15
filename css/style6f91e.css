@@ -28,8 +28,18 @@ appearance:none;
     color: #f1f1f1;
 }
 .iisr-list-item a:hover,  .header_contact .text-16:hover {
-    color: var(--e-global-color-colorsetone3) !important;
+      color: var(--e-global-color-colorsetone3) !important;
 }
+.header_contact .text-16.address-text:hover {
+    color: #fff !important;
+}
+.header_contact .text-16.ph-no:hover {
+    color: #d5d5d5 !important;
+}
+#footer_contents .text-16:hover {
+    color: #000 !important;
+}
+
 h2.common_title.tru{
 color: var(--e-global-color-colorsetone3) !important;
 }
@@ -75,4 +85,8 @@ color: var(--e-global-color-colorsetone3) !important;
 }
 .top.trans i img{
         filter: brightness(0) saturate(100%) invert(42%) sepia(96%) saturate(487%) hue-rotate(74deg) brightness(95%) contrast(90%);
+}
+
+.hero-banner .theme-button-new .button-icon{
+    color:#fff;
 }

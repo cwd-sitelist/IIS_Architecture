@@ -676,7 +676,11 @@
             scope = scope[0];
         }
 
-        const serviceItems = scope.querySelectorAll('.service-hover-item');
+        const container = scope.querySelector('.service-hover-item-box');
+        if (!container || container.dataset.serviceHoverInit === 'true') return;
+        container.dataset.serviceHoverInit = 'true';
+
+        const serviceItems = Array.from(container.querySelectorAll('.service-hover-item'));
         if (!serviceItems.length) return;
 
         const firstItem = serviceItems[0];
@@ -687,6 +691,12 @@
 
         serviceItems.forEach(item => {
             item.addEventListener('mouseenter', function() {
+                clearTimeout(revertTimer);
+                serviceItems.forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function() {
                 clearTimeout(revertTimer);
                 serviceItems.forEach(i => i.classList.remove('active'));
                 this.classList.add('active');
@@ -704,6 +714,7 @@
         });
     }
 
+    
     // Project Tab Carousel
     function iis_tab_carousel() {
         if (!elementExists('.iis_project_tab_design')) return;

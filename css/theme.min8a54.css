@@ -2149,6 +2149,7 @@ sup {
   position: relative;
   top: unset;
   pointer-events: fill;
+  cursor: pointer;
 }
 
 .arrow_type_two .comm_arrow_box .swiper-button-prev {
@@ -9109,8 +9110,8 @@ body:not(.block-editor-page, .wp-customizer) .wp-block-search__button-outside .w
 }
 
 .theme-button-new.nbutton-style-2:hover span {
-  color: var(--heading-color-one);
-  background: var(--background-white);
+  color: var(--background-white);
+  background: var(--color-set-one-2);
 }
 
 .theme-button-new.nbutton-style-2:hover .button-icon {
@@ -14260,6 +14261,7 @@ body ul.page-numbers li.active a::before,
   min-width: 470px;
   position: relative;
   z-index: 77;
+     pointer-events:none;
 }
 
 .service-hover-item .service-content .service_content_outer {
