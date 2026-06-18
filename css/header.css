@@ -725,8 +725,6 @@
         }
 
         .elementor-262 .elementor-element.elementor-element-2b5d376.overlay-mask-enabled-yes::before {
-            mask-image: url(../wp-content/uploads/2025/10/polygon-2.png);
-
             mask-size: cover;
             -webkit-mask-size: cover;
             mask-position: top center;
