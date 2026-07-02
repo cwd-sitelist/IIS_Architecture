@@ -1,26 +1,18 @@
+const width = document.getElementById("width");
+const height = document.getElementById("height");
+const cost = document.getElementById("cost");
 
-        const serviceSelect = document.getElementById("serviceSelect");
-        const rateInput = document.getElementById("rate");
-        const costInput = document.getElementById("cost");
+function calculateArea() {
+    const w = parseFloat(width.value) || 0;
+    const h = parseFloat(height.value) || 0;
 
-        serviceSelect.addEventListener("change", function () {
+    const area = w * h * 15;
 
-            const value = this.value;
+    cost.value = `£${area.toFixed(2)}`;
+}
 
-            if (value) {
-
-                const data = value.split("|");
-
-                rateInput.value = "£" + data[0];
-                costInput.value = "£" + data[1];
-
-            } else {
-
-                rateInput.value = "";
-                costInput.value = "";
-            }
-
-        });
+width.addEventListener("input", calculateArea);
+height.addEventListener("input", calculateArea);
 
 
          const openPopup = document.getElementById("openPopup");

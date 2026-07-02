@@ -425,7 +425,7 @@ form.submitting .wpcf7-spinner {
 .popup-box form{
     display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:0px;
 }
 
 .popup-box input,

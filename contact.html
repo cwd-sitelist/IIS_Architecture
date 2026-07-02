@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Us</title>
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <link rel='icon' href='image/favicon.png' />
-
     <link rel='stylesheet' href='css/stylesc098.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/sweetalertf269.css' type='text/css' media='all' />
@@ -26,11 +23,10 @@
     <link rel='stylesheet' href='css/widget-divider.mina871.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/style6f91e.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/wc-blocksf655.css' type='text/css' media='all' />
-     <link rel='stylesheet' href='css/cart-drawerf91e.css' type='text/css' media='all' />
-     <link rel='stylesheet' href='css/style6f91e.css' type='text/css' media='all' />
-     <link rel='stylesheet' href='css/modal-checkoutf91e.css' type='text/css'  media='all' />
+    <link rel='stylesheet' href='css/cart-drawerf91e.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/style6f91e.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/modal-checkoutf91e.css' type='text/css' media='all' />
 </head>
-
 <body
     class="wp-singular page-template page-template-template-homepage page-template-template-homepage-php page page-id-262 wp-embed-responsive no_e_google_fonts woocommerce-no-js right-sidebar scrollbarcolor page-home-1-modern-interiors rtl_enable elementor-default elementor-kit-6 elementor-page elementor-page-262">
     <div id="page" class="page_wapper hfeed site">
@@ -87,7 +83,7 @@
                                         </div>
                                         <div class="content ai-center">
                                             <span class="font-18 color-dark">Call Us </span>
-                                            <a href="tel: +44 783 555 6653" class="text-16">  +44 783 555 6653</a>
+                                            <a href="tel: +44 783 555 6653" class="text-16"> +44 783 555 6653</a>
                                         </div>
                                     </div>
                                 </div>
@@ -310,7 +306,7 @@
                                             <div class="mm-contact-item mm-phone">
                                                 <span class="mm-contact-icon"><i class="iis-phone"></i></span>
                                                 <a href="tel: +44 783 555 6653">
-                                                     +44 783 555 6653</a>
+                                                    +44 783 555 6653</a>
                                             </div>
 
                                             <div class="mm-contact-item mm-email">
@@ -446,7 +442,7 @@
                                                                             aria-atomic="true"></p>
                                                                         <ul></ul>
                                                                     </div>
-                                                                    <form action="Post" id="contactform"
+                                                                    <form method="post" id="contactform"
                                                                         class="wpcf7-form init"
                                                                         aria-label="Contact form"
                                                                         novalidate="novalidate" data-status="init">
@@ -582,7 +578,7 @@
                                                                 <span class="font-18 color-dark">Need help? Call Us:
                                                                 </span>
                                                                 <a href="tel: +44 783 555 6653" class="text-16 ph-no">
-                                                                     +44 783 555 6653 </a>
+                                                                    +44 783 555 6653 </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -622,6 +618,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
                                     <div class="elementor-element elementor-element-0620bfe e-con-full e-flex e-con e-parent"
                                         data-id="0620bfe" data-element_type="container" data-e-type="container">
@@ -817,7 +814,8 @@
                                                                                                         </span>
                                                                                                         <a href="tel: +44 783 555 6653"
                                                                                                             class="text-16">
-                                                                                                            +44 783 555 6653 </a>
+                                                                                                            +44 783 555
+                                                                                                            6653 </a>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -904,9 +902,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-                              
-
                                     <script type="text/javascript" src="js/jquery.minf43b.js"></script>
                                     <script type="text/javascript" src="js/jquery.blockUI.min3de0.js"></script>
                                     <script type="text/javascript" src="js/main5152.js"></script>
@@ -929,7 +924,37 @@
                                     <script type="text/javascript" src="js/toastify-js-1.12.0f91e.js"></script>
                                     <script type="text/javascript" defer src="js/forms7762.js"></script>
                                     <script type="text/javascript" defer src="js/main.js"></script>
+                                    <script>
+                                        jQuery(document).ready(function () {
+                                            jQuery("#contactform").on("submit", function (event) {
+
+                                                event.preventDefault(); // Prevent the form from submitting the default way
+
+                                                // Clear previous messages
+                                                jQuery("#responseMessage").text("");
+                                                jQuery("#errorMessage").text("");
+
+                                                // Prepare form data for AJAX
+                                                var formData = new FormData(this);
+
+                                                // Make the AJAX request
+                                                jQuery.ajax({
+                                                    url: "sendmail.php", // Replace with your server-side script
+                                                    type: "POST",
+                                                    data: formData,
+                                                    contentType: false, // Important for file upload
+                                                    processData: false, // Prevent jQuery from processing the data
+                                                    success: function (response) {
+                                                        jQuery("#responseMessage").text(response); // Display success message
+                                                    },
+
+                                                    error: function (jqXHR, textStatus, errorThrown) {
+                                                        jQuery("#errorMessage").text("Error occurred: " + textStatus + " - " + errorThrown);
+                                                    },
+                                                });
+                                            });
+                                        });
+                                    </script>
 
 </body>
-
 </html>
