@@ -7059,12 +7059,12 @@ body .wp-block-social-links li {
   color: var(--color-white);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: rgba(255, 255, 255, 0.0509803922);
+  border-color: rgba(255, 255, 255, 0.62);
 }
 
 .title_all_box.white_color .sub_title .d_inline_flex::before,
 .title_all_box.white_color .sub_title .d_inline_flex::after {
-  background: rgba(255, 255, 255, 0.0509803922);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .slider-title-wrapper.type_one .slider-primary-title {
